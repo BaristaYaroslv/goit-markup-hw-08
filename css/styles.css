@@ -14,7 +14,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 14px; 
   font-style: normal;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color)
@@ -43,7 +43,7 @@ body{
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.21;
   text-decoration: none;
 }
 .logo.top{
@@ -84,7 +84,7 @@ body{
   color:var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
 }
@@ -120,7 +120,7 @@ body{
   background-color:var(--background-white-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.62;
 }
 .buttons.second:hover,
 .buttons.second:focus,
@@ -136,22 +136,19 @@ body{
 .title-features{
   color: var(--title-text-color);
   font-weight: 700;
-  line-height: 16px;
-}
-.text-features{
-  line-height: 24px;
+  line-height: 1.14;
 }
 
 /* section team */
 .team{
   background-color:var(--background-white-color);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
 }
 .section-title{
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -168,11 +165,11 @@ body{
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 }
 .portfolio .text{
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.85;
 }
 /* footer */
 .footer{

@@ -25,8 +25,6 @@ body{
   display: flex;
   height: 80px;
   width: 1600px;
-  left: 15px;
-  top: 0px;
 }
 .header .link:hover,
 .header .link:focus,
@@ -94,6 +92,7 @@ body{
   color: var(--title-text-color);
   background-color:var(--background-white-color);
   border-radius: 4px;
+  font-family: 'Roboto';
   transition-duration: 0.4s;
   cursor: pointer;
   border: none;
@@ -102,6 +101,10 @@ body{
   color:var(--primary-white-color);
   background-color:var(--accent-color);
   box-shadow: 0px 4px 4px 0px #00000040;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 .buttons.prime:hover,
 .buttons.prime:focus,
@@ -136,7 +139,6 @@ body{
 .text-features{
   line-height: 1.71;
 }
-
 /* section team */
 .team{
   background-color:var(--background-white-color);
@@ -172,17 +174,15 @@ body{
   line-height: 1.85;
 }
 /* footer */
-.footer{
-  width: 1600px;
-  height: 252px;
-  top: 2094px;
-}
 .link,.link-map{
   text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
 }
 .adress-link .link-map{
   color: #FFFFFF;
 }
 .adress-link .link{
   color: rgba(255, 255, 255, 0.6);
+
 }

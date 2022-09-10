@@ -7,35 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/styles.css">
     <title>WebStudio</title>
   </head>
   <body>
     <!-- Шапка -->
     <header class="header">
+    <div class="container">
       <a href="./index.html" class="logo top"><span class="web">Web</span>Studio</a>
       <nav >
-        <ul class="site-nav">
+        <ul class="site-nav list">
           <li><a class="link current"href="./index.html">Студія</a></li>
           <li><a class="link"href="./portfolio.html">Портфоліо</a></li>
           <li><a class="link"href="#address">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contacts">
+      <ul class="contacts list">
         <li><a href="mailto:info@devstudio.com"class="link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111"class="link">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
     <main>
-      <!-- Ефективні рішення для вашого бізнесу -->
+      <!-- Hero -->
       <section class="hero">
+      <div class="container">
         <h1 class="hero-name">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
-        <button class="buttons prime" type="button">Замовити послугу</button>
+        <button class="buttons prime hero-butt" type="button">Замовити послугу</button>
+      </div>
       </section>
       <!-- Особливості -->
       <section class="section-features">
+      <div class="container">
         <h2 class="invizible">Особливості</h2>
-        <ul>
+        <ul class="list">
           <li>
             <h3 class="title-features" >УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="text-features">
@@ -64,11 +70,13 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Чим ми займаємося -->
       <section>
+      <div class="container container-title">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/1.1-min.jpg" alt="Розробка-Програм" width="370" />
           </li>
@@ -79,11 +87,13 @@
             <img src="./images/3.1-min.jpg" alt="Графічний-Дезайн" width="370" />
           </li>
         </ul>
+      </div>
       </section>
       <!-- Наша Команда -->
       <section class="team">
+        <div class="container">
         <h2 class="section-title">Наша Команда</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/img-3-min.jpg" alt="Ігор Дем'яненко" width="270"/>
@@ -106,13 +116,15 @@
             <p class="text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- Подвал -->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" class="logo bot"><span class="web">Web</span>Studio</a>
       <address id="address" class="adress-link">
-        <ul>
+        <ul class="list">
           <li>
             <a
               href="https://goo.gl/maps/ZNrPG5qkYXo9K8xP7"
@@ -124,6 +136,7 @@
           <li><a  class="link"href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

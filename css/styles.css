@@ -238,6 +238,9 @@ padding-top: 0;
 margin-bottom: 50px;
 margin-bottom: 94px;
 }
+.what-we-do{
+  margin-bottom: 94px;
+}
 .list{
   display: flex;
   flex-wrap: wrap;

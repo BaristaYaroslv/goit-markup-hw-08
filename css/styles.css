@@ -28,6 +28,7 @@ body{
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   margin: 0;
+  fill: var(--primary-text-color);
 }
 .container{
   width: 1200px;
@@ -47,6 +48,9 @@ body{
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
 }
+.ico{
+  margin-right: 10px;
+}
 .header .link:hover,
 .header .link:focus,
 .adress-link .link:focus,
@@ -55,6 +59,7 @@ body{
 .adress-link .link-map:hover{
   color: var(--accent-color);
   transition-duration: 0.4s;
+  fill: var(--accent-color);
 }
 .header .container{
   display: flex;
@@ -80,7 +85,7 @@ body{
 .logo.bot{
   color: var(--primary-white-color);
   display: inline-block;
-  margin-bottom: 32px;
+  margin-bottom: 11px;
 }
 .web {
   color: var(--accent-color);
@@ -125,25 +130,25 @@ body{
 .contacts .item + .item{
   margin-left: 50px;
 }
-.envelope,.smartphone{
-  margin-right: 10px;
-  width: 1em;
-  height: 1em;
+.item .link{
+  display: flex;
+  align-items: center;
 }
-.ico{
-  fill: var(--primary-text-color);
-}
-.ico:hover,
-.ico:focus{
-  fill: var(--accent-color);
-}
+
 /* hero */
 
-.hero{
+.container-hero{
   text-align: center;
   background-color:var(--background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/hero-Img.jpg);
 }
 .hero-name{
   color:var(--primary-white-color);
@@ -155,15 +160,7 @@ body{
   margin-top: 0;
   margin-bottom: 30px;
 }
-.container.hero{
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(/images/hero-Img.jpg);
-}
+
 
 /* buttons */
 
@@ -197,8 +194,6 @@ body{
 .buttons.prime:focus,
 .buttons.prime:active{
   color: var(--background-white-color);
-  /* трохи освітлив при наведені,для виділення */
-  background-color:#00BFFF;
 }
 
 .buttons.second{
@@ -342,45 +337,37 @@ margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons:hover,
 .icons:focus{
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
-/* Приклади робіт */
 
-.portfolio .title{
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.portfolio .text{
-  font-size: 16px;
-  line-height: 1.85;
-}
 /* Постійні клієнти */
-.regular-customers{
-  margin:94px 0;
-
+.clients{
+  width: 1170px;
+  padding:94px 200px;
 }
-.icons-customers{
+
+.clients .link{
+  width: 100%;
+  height: 100%;
+  fill: var(--icon-color);
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.icon-customers{
-  width: 170px;
-  height: 92px;
-  fill: var(--icon-color);
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-}
-.icon-customers:hover,
-.icon-customers:focus{
+.clients .link:hover .icon-clients,
+.clients .link:focus .icon-clients{
   fill: var(--accent-color);
+}
+.clients .link:hover,
+.clients .link:focus{
   border-color: var(--accent-color);
 }
 /* footer */
@@ -419,11 +406,30 @@ margin-left: 70px;
 .adress-link .link-map{
   color: #FFFFFF;
 }
+.footer-list li{
+  margin-top: 9px;
+}
 .adress-link .list{
   display: flex;
   flex-direction: column;
 }
 /* portfolio */
+.portfolio .title{
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.06em;
+}
+.portfolio .text{
+  font-size: 16px;
+  line-height: 1.85;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-text-color);
+}
 .portfolio{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -435,16 +441,16 @@ margin-left: 70px;
   margin-bottom: 50px;
 }
 
-
 .list .portfolio-item{
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-  border: 1px solid #EEEEEE;
+
 }
-.portfolio-item:hover,
-.portfolio-item:focus{
+.portfolio-link:hover,
+.portfolio-link:focus{
   box-shadow: 0px 4px 4px 0px #00000040;
+  display: block;
 }
 .list .portfolio-item:nth-child(3n){
   margin-right: 0%;
@@ -453,12 +459,11 @@ margin-left: 70px;
   margin-bottom: 0%;
 }
 .portfolio-card{
-padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: none;
+  padding: 20px 24px;
 }
-.portfolio-card .title,.text{
-  margin: 0;
-  padding: 0;
-}
+
 .portfolio-card .title{
   margin-bottom: 4px;
 }

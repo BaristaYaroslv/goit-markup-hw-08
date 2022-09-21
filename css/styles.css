@@ -244,9 +244,10 @@ body{
   margin: 0;
 }
 .features-svg{
+  height: 120px;
   display: flex;
   justify-content: center;
-  padding: 25px 100px;
+  align-items: center;
   background-color: var(--background-white-color);
   margin-bottom: 30px;
 }
@@ -348,13 +349,12 @@ margin-bottom: 50px;
 
 /* Постійні клієнти */
 .clients{
-  width: 1170px;
-  padding:94px 200px;
+  padding:94px 0;
 }
 
-.clients .link{
-  width: 100%;
-  height: 100%;
+.clients-link{
+  width: 170px;
+  height: 92px;
   fill: var(--icon-color);
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -362,12 +362,12 @@ margin-bottom: 50px;
   justify-content: center;
   align-items: center;
 }
-.clients .link:hover .icon-clients,
-.clients .link:focus .icon-clients{
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients{
   fill: var(--accent-color);
 }
-.clients .link:hover,
-.clients .link:focus{
+.clients-link:hover,
+.clients-link:focus{
   border-color: var(--accent-color);
 }
 /* footer */

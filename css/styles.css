@@ -362,6 +362,7 @@ margin-bottom: 50px;
   justify-content: center;
   align-items: center;
 }
+
 .clients-link:hover .icon-clients,
 .clients-link:focus .icon-clients{
   fill: var(--accent-color);

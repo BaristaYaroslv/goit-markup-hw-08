@@ -43,7 +43,7 @@
       <!-- Hero -->
       <section class="container-hero">
         <h1 class="hero-name">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
-        <button class="buttons prime hero-butt" type="button">Замовити послугу</button>
+        <button class="buttons prime hero-butt" type="button" data-modal-open>Замовити послугу</button>
       </section>
       <!-- Особливості -->
       <section class="section-features">
@@ -308,5 +308,15 @@
           </div>    
      </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn pointer" data-modal-close>
+          <svg class="icon" width="11" height="11">
+            <use href="/images/symbol-defs (1).svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>

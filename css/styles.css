@@ -51,22 +51,22 @@ body{
   border-bottom: 1px solid #ECECEC;
 }
 .ico{
+  fill: currentColor;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .header .link:hover,
-.header .link:focus,
-.adress-link .link:focus,
-.adress-link .link:hover,
-.adress-link .link-map:focus,
-.adress-link .link-map:hover{
+.header .link:focus{
   color: var(--accent-color);
-  transition-duration: 0.4s;
   fill: var(--accent-color);
 }
+.adress-link .link:focus,
+.adress-link .link:hover{
+  color: var(--accent-color);
+}
 .link{
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .header .container{
   display: flex;
@@ -83,7 +83,7 @@ body{
   position: absolute;
   display: block;
   left: 0;
-  bottom: 3px;
+  bottom: -1px;
   background-color: var(--accent-color);
   width: 100%;
   height: 4px;
@@ -171,11 +171,11 @@ body{
   margin-right: auto;
   background-size: cover;
   background-position: center;
-  background-image: 
+  background-image:
+  url(./images/hero-Img.jpg),
   linear-gradient(
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ),url(/images/hero-Img.jpg);
+    rgba(47, 48, 58, 0.4));
 }
 .hero-name{
   color:var(--primary-white-color);
@@ -197,12 +197,12 @@ body{
   background-color:var(--background-white-color);
   border-radius: 4px;
   font-family: 'Roboto';
-  transition-duration: 0.4s;
   cursor: pointer;
   border: none;
   display: inline-block;
   padding: 6px 22px;
   min-height: 38px;
+  transition: color,background-color,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons.prime{
   color:var(--primary-white-color);
@@ -385,6 +385,9 @@ margin-bottom: 50px;
   padding: 0;
   justify-content: space-between;
 }
+.icon{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
 .icons{
   width: 44px;
   height: 44px;
@@ -393,8 +396,7 @@ margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons:hover,
 .icons:focus{
@@ -416,6 +418,10 @@ margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-clients{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .icon-clients,
@@ -453,22 +459,23 @@ margin-left: 70px;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.link,.link-map{
-  text-decoration: none;
-  font-style: normal;
+
+.link-map{
+  color: var(--primary-white-color);
+}
+.link-footer{
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.adress-link .link-map{
-  color: #FFFFFF;
-}
-.footer-list li{
+.footer-item{
   margin-top: 9px;
 }
-.adress-link .list{
-  display: flex;
-  flex-direction: column;
+.footer-list{
+ display: flex;
+ flex-direction: column;
+  
 }
+
 /* portfolio */
 .portfolio .title{
   color: var(--title-text-color);
@@ -501,7 +508,9 @@ margin-left: 70px;
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-
+}
+.portfolio-link{
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus{

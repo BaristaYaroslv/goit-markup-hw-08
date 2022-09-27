@@ -53,7 +53,6 @@ body{
 .ico{
   fill: currentColor;
   margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .header .link:hover,
 .header .link:focus{
@@ -66,7 +65,6 @@ body{
 }
 .link{
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 .header .container{
   display: flex;
@@ -137,10 +135,11 @@ body{
   padding-bottom: 32px;
   
 }
-.contacts .link {
+.contacts-link {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts{
@@ -172,7 +171,7 @@ body{
   background-size: cover;
   background-position: center;
   background-image:
-  url(./images/hero-Img.jpg),
+  url(/images/hero-Img.jpg),
   linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4));
@@ -202,7 +201,10 @@ body{
   display: inline-block;
   padding: 6px 22px;
   min-height: 38px;
-  transition: color,background-color,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons.prime{
   color:var(--primary-white-color);
@@ -385,9 +387,7 @@ margin-bottom: 50px;
   padding: 0;
   justify-content: space-between;
 }
-.icon{
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
+
 .icons{
   width: 44px;
   height: 44px;
@@ -462,10 +462,12 @@ margin-left: 70px;
 
 .link-map{
   color: var(--primary-white-color);
+  font-style: normal;
 }
 .link-footer{
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
 .footer-item{
   margin-top: 9px;

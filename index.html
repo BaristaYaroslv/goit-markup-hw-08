@@ -324,7 +324,49 @@
             <use href="./images/symbol-defs (1).svg#icon-close"></use>
           </svg>
         </button>
-      </div>
+        <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="form js-speaker-form">
+        <div class="form-field">
+          <label for="name">Ім'я</label>
+          <input 
+          type="text"
+          name="name"
+          id="name"
+          placeholder="lorem3">
+        </div>
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input 
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="lorem3">
+        </div>
+        <div class="form-field">
+          <label for="mail">Пошта</label>
+          <input 
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="lorem3">
+        </div>
+        <div class="form-field">
+          <label for="comment">Коментар</label>
+          <textarea 
+            name="comment" 
+            id="comment"
+            rows="10" 
+            placeholder="Введіть текст"></textarea>
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" name="policy" id="policy">
+          <label for="policy">Погоджуюся з розсилкою та приймаю 
+            <a href="" class="rules">Умови договору</a></label>
+        </div>
+        <button type="submit" class="form-btn">Відправити</button>
+        </div>
+       </div>
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>

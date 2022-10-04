@@ -297,30 +297,54 @@
        <div class="footer-icon-box">
           <h4 class="footer-title">Приєднуйтесь</h4>
            <ul class="list-icon">
-             <li class="link"><a href="www.instagram.com" class="icons footer-icon">
-                 <svg class="icon" width="20px" height="20px">
+             <li class="link">
+                 <a href="www.instagram.com" class="icons footer-icon">
+                  <svg class="icon" width="20px" height="20px">
                    <use href="./images/symbol-defs (1).svg#icon-instagram"></use>
                    </svg></a></li>
-             <li class="link"><a href="www.twitter.com" class="icons footer-icon">
-                 <svg class="icon" width="20px" height="20px">
+             <li class="link">
+                 <a href="www.twitter.com" class="icons footer-icon">
+                  <svg class="icon" width="20px" height="20px">
                    <use href="./images/symbol-defs (1).svg#icon-twitter"></use>
                    </svg>
                  </a></li>
-             <li class="link"><a href="www.facebook.com" class="icons footer-icon">
-                <svg class="icon" width="20px" height="20px">
+             <li class="link">
+                <a href="www.facebook.com" class="icons footer-icon">
+                 <svg class="icon" width="20px" height="20px">
                  <use href="./images/symbol-defs (1).svg#icon-facebook"></use>
                  </svg></a></li>
              <li class="link"><a href="www.linkedin.com" class="icons footer-icon">
                 <svg class="icon" width="20px" height="20px">
                 <use href="./images/symbol-defs (1).svg#icon-linkedin"></use>
                </svg></a></li>
+          </div>
+          <div class="footer-subscribe">
+              <form class="footer-subscribe-form">
+                <div class="footer-label-input-container">
+                  <label
+                    ><span class="footer-subscribe-text"
+                      >Підпишіться на розсилку</span>
+                    <input
+                      type="text"
+                      class="subscribe-input-info"
+                      name="mail"
+                      placeholder="E-mail"/>
+                  </label>
+                </div>
+                <button type="submit" class="footer-subscribe-btn pointer">
+                  Підписатися
+                  <svg class="footer-subscribe-icon" width="24" height="24">
+                    <use href="./images/symbol-defs (1).svg#icon-send"></use>
+                  </svg>
+                </button>
+              </form>
           </div>    
      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn " data-modal-close>
-          <svg class="modal-icon" width="18" height="18">
+          <svg class="modal-icon-close" width="18" height="18">
             <use href="./images/symbol-defs (1).svg#icon-close"></use>
           </svg>
         </button>
@@ -332,7 +356,11 @@
           type="text"
           name="name"
           id="name"
-          placeholder="lorem3">
+          required
+          minlength="3" 
+          maxlength="12">
+          <svg class="modal-icon" width="18px" height="18px">
+            <use href="./images/symbol-defs (1).svg#icon-user" ></use></svg>
         </div>
         <div class="form-field">
           <label for="tel">Телефон</label>
@@ -340,7 +368,9 @@
           type="tel"
           name="tel"
           id="tel"
-          placeholder="lorem3">
+          maxlength="12">
+          <svg class="modal-icon" width="18px" height="18px" >
+            <use href="./images/symbol-defs (1).svg#icon-tel" ></use></svg>
         </div>
         <div class="form-field">
           <label for="mail">Пошта</label>
@@ -348,7 +378,9 @@
           type="email"
           name="mail"
           id="mail"
-          placeholder="lorem3">
+          required>
+          <svg class="modal-icon" width="18px" height="18px">
+            <use href="./images/symbol-defs (1).svg#icon-mail" ></use></svg>
         </div>
         <div class="form-field">
           <label for="comment">Коментар</label>
@@ -359,9 +391,15 @@
             placeholder="Введіть текст"></textarea>
         </div>
         <div class="form-checkbox">
-          <input type="checkbox" name="policy" id="policy">
-          <label for="policy">Погоджуюся з розсилкою та приймаю 
-            <a href="" class="rules">Умови договору</a></label>
+          <input class="input-check visually-hidden" value="true" type="checkbox" name="user-policy" id="user-policy">
+          <label for="user-policy" class="modal-agreement-text">
+            <span>
+              <svg class="modal-check-icon" width="11" height="8">
+                <use href="./images/symbol-defs (1).svg#icon-modal-check"></use>
+              </svg>
+            </span>
+            Погоджуюся з розсилкою та приймаю 
+            <a href="" class="modal-conditions">Умови договору</a></label>
         </div>
         <button type="submit" class="form-btn">Відправити</button>
         </div>

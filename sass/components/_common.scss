@@ -1,0 +1,18 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-title-color);
+  background-color: var(--main-text-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

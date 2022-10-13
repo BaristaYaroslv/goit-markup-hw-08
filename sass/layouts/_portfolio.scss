@@ -46,9 +46,11 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__link:hover .portfolio__overlay,
-.portfolio__link:focus .portfolio__overlay {
+.portfolio__link {
+  &:hover .portfolio__overlay,
+  &:focus .portfolio__overlay{
   transform: translateY(0%);
+  }
 }
 
 .portfolio__info {

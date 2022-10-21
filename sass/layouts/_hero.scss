@@ -7,7 +7,6 @@
     padding-bottom: 200px;
   }
   &__overlay {
-    max-width: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -22,7 +21,6 @@
     @include tablet {
       background-image: var(--hero-gradient),
         url(..//../images/hero/hero-tab1x.jpg);
-      max-width: 768px;
       @include retina {
         background-image: var(--hero-gradient),
           url(..//../images/hero/hero-tab2x.jpg);
